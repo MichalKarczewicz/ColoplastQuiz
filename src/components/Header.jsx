@@ -8,20 +8,17 @@ const Header = () => {
       <Link to="/">
         <motion.button
           whileHover={{ scale: 1.05 }}
-          className="w-full max-w-md text-white px-4 py-2 bg-[#17b7cf] transition hover:shadow-lg rounded-[24px] hover:underline text-2xl"
+          className="w-full max-w-md text-white px-4 py-2 transition hover:shadow-lg rounded-[24px] hover:underline text-2xl"
         >
-          Home
+          <div className="flex justify-end">
+            <img
+              alt="Coloplast Logo"
+              src="https://www.coloplast.pl/Global/03_Default%20images/CP_Logo_Deep_Blue_RGB.png"
+              className="w-48 max-w-full h-auto object-contain"
+            />
+          </div>
         </motion.button>
       </Link>
-
-      {/* Right side - Logo */}
-      <div className="flex justify-end">
-        <img
-          alt="Coloplast Logo"
-          src="https://www.coloplast.pl/Global/03_Default%20images/CP_Logo_Deep_Blue_RGB.png"
-          className="w-48 max-w-full h-auto object-contain"
-        />
-      </div>
     </div>
   );
 };

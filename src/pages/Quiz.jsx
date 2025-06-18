@@ -3,7 +3,6 @@ import { getRandomQuestions } from "../questions/QuestionService";
 import Question from "./Question";
 import CategorySelection from "./CategorySelection";
 import { motion, AnimatePresence } from "framer-motion";
-import ScoreHistory from "./ScoreHistory";
 
 const Quiz = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);

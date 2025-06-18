@@ -18,7 +18,7 @@ function AppWrapper() {
       <div className="max-w-3xl mx-auto">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/Quiz" element={<Quiz />} />
         </Routes>
       </div>
     </div>
