@@ -1,0 +1,143 @@
+[
+  {
+    "question": "Co to są compsy?",
+    "category": "product",
+    "description": "Tu moze byc zdjecie",
+    "choices": [
+      {
+        "text": "Complimentary items",
+        "id": 1
+      },
+      {
+        "text": "Computer Psychology",
+        "id": 2
+      },
+      {
+        "text": "Cognitive Psychology",
+        "id": 3
+      },
+      {
+        "text": "Combat Psyche Items",
+        "id": 4
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },
+  {
+    "question": "Co to jest catheter?",
+    "category": "product",
+    "description": "Tu moze byc zdjecie",
+    "choices": [
+      {
+        "text": "Catheter to cienka rurka medyczna wprowadzana do ciała w celu odprowadzania lub podawania płynów, najczęściej używana np. do odprowadzania moczu z pęcherza.",
+        "id": 1
+      },
+      {
+        "text": "Catheter to specjalna komora dźwiękowa w głośnikach do wzmacniania basów.",
+        "id": 2
+      },
+      {
+        "text": "Catheter to tradycyjny szkocki instrument dęty używany podczas ceremonii wojskowych.",
+        "id": 3
+      },
+      {
+        "text": "Catheter to odmiana kota domowego z wyjątkowo długimi wąsami, hodowana w Norwegii.",
+        "id": 4
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },
+  {
+    "question": "Czy wysyłamy do pacjentów krople do oczu?",
+    "category": "product",
+    "description": "Tu moze byc zdjecie",
+    "choices": [
+      {
+        "text": "Tak",
+        "id": 1
+      },
+      {
+        "text": "Nie",
+        "id": 2
+      }
+    ],
+    "correctAnswer": 2,
+    "explanation": "CorrectAnswer"
+  },
+  {
+    "question": "Kto napisal quiz??",
+    "category": "process",
+    "description": "Tu też coś moze byc, jakis dodatkowy tekst",
+    "choices": [
+      {
+        "text": "PLMIKA",
+        "id": 1
+      },
+      {
+        "text": "PLKAKE",
+        "id": 2
+      },
+      {
+        "text": "PLNOWO",
+        "id": 3
+      },
+      {
+        "text": "PLWIBAZ",
+        "id": 4
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },
+  {
+    "question": "Jakies pytanako",
+    "category": "mentoring",
+    "description": "Dodatkowy text",
+    "choices": [
+      {
+        "text": "Dobra odpowiedz",
+        "id": 1
+      },
+      {
+        "text": "Zła",
+        "id": 2
+      },
+      {
+        "text": "zla2",
+        "id": 3
+      },
+      {
+        "text": "zla 3",
+        "id": 4
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },{
+    "question": "Wikipedia?",
+    "category": "wikipedia",
+    "description": "Dodatkowy text",
+    "choices": [
+      {
+        "text": "tak",
+        "id": 1
+      },
+      {
+        "text": "beeeeeeeeeeeeeeeeeeee",
+        "id": 2
+      },
+      {
+        "text": "baaaaaaaaaa",
+        "id": 3
+      },
+      {
+        "text": "nie",
+        "id": 4
+      }
+    ],
+    "correctAnswer": 4,
+    "explanation": "CorrectAnswer"
+  }
+]
