@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import { getRandomQuestions } from "../questions/QuestionService";
 import Question from "./Question";
 import CategorySelection from "./CategorySelection";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Quiz = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const { quizCategory } = useParams();
+  const navigate = useNavigate();
+
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [nextQuestionVisible, setNextQuestionVisible] = useState(false);
@@ -13,13 +16,14 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
 
   const loadQuestions = useCallback(async () => {
-    if (!selectedCategory) return;
+    if (!quizCategory) return;
 
     const allQuestions = await getRandomQuestions();
     const filteredQuestions = allQuestions.filter(
-      (q) => q.category === selectedCategory
+      (q) => q.category === quizCategory
     );
 
+    // Losowe tasowanie
     for (let i = filteredQuestions.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [filteredQuestions[i], filteredQuestions[j]] = [
@@ -34,13 +38,13 @@ const Quiz = () => {
     setNextQuestionVisible(false);
     setResultsVisible(false);
     setScore(0);
-  }, [selectedCategory]);
+  }, [quizCategory]);
 
   useEffect(() => {
-    if (selectedCategory) {
+    if (quizCategory) {
       loadQuestions();
     }
-  }, [selectedCategory, loadQuestions]);
+  }, [quizCategory, loadQuestions]);
 
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -66,7 +70,7 @@ const Quiz = () => {
       };
 
       localStorage.setItem(
-        `Quiz_Result_of_${selectedCategory}`,
+        `Quiz_Result_of_${quizCategory}`,
         JSON.stringify(result)
       );
     }
@@ -78,12 +82,13 @@ const Quiz = () => {
   };
 
   const handleRestart = () => {
-    setSelectedCategory(null);
-    setQuestions([]);
+    // Zamiast ustawiać kategorię na null, wróć do wyboru kategorii
+    navigate("/Category");
   };
 
-  if (!selectedCategory) {
-    return <CategorySelection onSelect={setSelectedCategory} />;
+  if (!quizCategory) {
+    // Jeśli ktoś wszedł na /Quiz bez kategorii, przekieruj na wybór kategorii
+    return <CategorySelection />;
   }
 
   if (questions.length === 0) {

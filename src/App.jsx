@@ -8,19 +8,26 @@ import {
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
+import CategorySelection from "./pages/CategorySelection";
 
 function AppWrapper() {
   const location = useLocation();
-  const isQuizPage = location.pathname.toLowerCase().includes("/quiz");
+
+  const isCategoryPage = location.pathname
+    .toLowerCase()
+    .startsWith("/category");
+  const isQuizPage = location.pathname.toLowerCase().startsWith("/quiz/");
 
   return (
     <div className="min-h-screen pt-3 w-full">
       {isQuizPage && <Header />}
+      {isCategoryPage && <Header />}
+
       <div className="max-w-3xl mx-auto">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Quiz" element={<Quiz />} />
-          {/* Catch-all: przekierowanie na / */}
+          <Route path="/category" element={<CategorySelection />} />
+          <Route path="/quiz/:quizCategory" element={<Quiz />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

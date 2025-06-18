@@ -17,29 +17,12 @@ const Question = ({ data, currentQuestionIndex, selectAnswer, quizLength }) => {
 
   if (!data) return null;
 
-  // const renderExplanation = () => {
-  //   if (!data.explanation || !selectedChoice) return null;
-  //   const isCorrect = selectedChoice === data.correctAnswer;
-
-  //   return (
-  //     <div
-  //       className={`mt-3 p-3 rounded ${
-  //         isCorrect
-  //           ? "bg-gradient-to-r from-green-600 to-green-400 text-white"
-  //           : "bg-gradient-to-r from-red-600 to-pink-600 text-white"
-  //       }`}
-  //     >
-  //       <p className="text-sm">{data.explanation}</p>
-  //     </div>
-  //   );
-  // };
-
   return (
     <div className="bg-[#f5f5f5] p-6 text-[#6f6f6f] shadow-xl rounded-b-3xl border-b-2 min-h-[30vh] pb-8">
       <div className="mb-4">
         <p className="mb-2 text-[#6f6f6f] text-xl">Question</p>
         <div className="flex items-center space-x-4">
-          <div className="flex items-center mt-4 justify-center w-12 h-12 rounded-full bg-white text-[#17b7cf]  font-bold text-lg border border-[#6f6f6f]">
+          <div className="flex items-center mt-4 justify-center w-12 h-12 rounded-full bg-white text-[#17b7cf] font-bold text-lg border border-[#6f6f6f]">
             <strong>
               {currentQuestionIndex}/{quizLength}
             </strong>
@@ -77,7 +60,7 @@ const Question = ({ data, currentQuestionIndex, selectAnswer, quizLength }) => {
                   "bg-red-600 border-red-600 text-white cursor-default";
               }
             } else {
-              stateClasses = "border-[#6f6f6f]  text-gray-400 cursor-default";
+              stateClasses = "border-[#6f6f6f] text-gray-400 cursor-default";
             }
           }
 
@@ -103,8 +86,6 @@ const Question = ({ data, currentQuestionIndex, selectAnswer, quizLength }) => {
           );
         })}
       </div>
-
-      {/* {renderExplanation()} */}
     </div>
   );
 };
