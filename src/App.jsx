@@ -3,6 +3,7 @@ import {
   Routes,
   Route,
   useLocation,
+  Navigate,
 } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -19,6 +20,8 @@ function AppWrapper() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Quiz" element={<Quiz />} />
+          {/* Catch-all: przekierowanie na / */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </div>
