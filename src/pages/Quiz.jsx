@@ -130,6 +130,7 @@ const Quiz = () => {
 
   return (
     <div>
+      
       <AnimatePresence mode="wait">
         {currentQuestion && (
           <motion.div

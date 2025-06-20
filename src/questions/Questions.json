@@ -49,8 +49,7 @@
     ],
     "correctAnswer": 4,
     "explanation": "CorrectAnswer"
-  },
-  {
+  },{
     "question": "From whom is the dark green prescription assigned?",
     "category": "process",
     "description": "Tu też coś moze byc, jakis dodatkowy tekst",
@@ -455,8 +454,7 @@
     ],
     "correctAnswer": 1,
     "explanation": "CorrectAnswer"
-  },
-  {
+  },{
     "question":"If there is product CJLL onthe order and CJL in the proscript, can we send them?",
     "category": "product",
     "description": "Tu też coś moze byc, jakis dodatkowy tekst",
@@ -501,24 +499,24 @@
     "description": "Tu też coś moze byc, jakis dodatkowy tekst",
     "image": "",
     "choices": [
-      {
-        "text": "",
+      { 
         "image": "/images/product_question_7_answer_1.jpg",
+        "text": null,
         "id": 1
       },
-      {
-        "text": "",
+      { 
         "image": "/images/product_question_7_answer_2.jpg",
+        "text": null,
         "id": 2
       },
       {
-        "text": "",
         "image": "/images/product_question_7_answer_3.jpg",
+        "text": null,
         "id": 3
       },
       {
-        "text": "",
         "image": "/images/product_question_7_answer_4.jpg",
+        "text": null,
         "id": 4 
       }
     ],

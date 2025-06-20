@@ -82,15 +82,16 @@ const Question = ({ data, currentQuestionIndex, selectAnswer, quizLength }) => {
                 )}
               </span>
               <span className="pl-2">                 
-                  {choice.image ? (
-                    <img
-                      src={choice.image}
-                      alt={`Option ${choice.id}`}
-                      className="max-w-[150px] max-h-[150px] object-contain"
-                    />
-                  ) : (
-                    choice.text
-                  )}
+                {choice.image ? (
+                  <img
+                    src={choice.image}
+                    alt={`Option ${choice.id}`}
+                    className="max-w-[150px] max-h-[150px] object-contain"
+                  />
+                ) : choice.text ? (
+                  choice.text
+                ) : null}
+               
               </span>
             </button>
           );
