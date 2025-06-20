@@ -4,13 +4,13 @@ import {getFirestore} from "firebase/firestore"
 require('dotenv').config();
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB24hy1uI_eXoB3TeMQAGcDU8YU2mkzA4M",
-  authDomain: "quizc-95de4.firebaseapp.com",
-  projectId: "quizc-95de4",
-  storageBucket: "quizc-95de4.firebasestorage.app",
-  messagingSenderId: "74551304459",
-  appId: "1:74551304459:web:477fd90842276e1674820e",
-  measurementId: "G-QBK7S0T13P"
+  apiKey: import.meta.env.FIREBASE_API_KEY,
+  authDomain: import.meta.env.FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.FIREBASE_APP_ID,
+  measurementId: import.meta.env.FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
