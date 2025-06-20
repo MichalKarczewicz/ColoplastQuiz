@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore"
 
+require('dotenv').config();
+
 const firebaseConfig = {
   apiKey: "AIzaSyB24hy1uI_eXoB3TeMQAGcDU8YU2mkzA4M",
   authDomain: "quizc-95de4.firebaseapp.com",
