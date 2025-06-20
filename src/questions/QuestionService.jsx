@@ -16,7 +16,7 @@ const firebaseConfig = {
 
 const firebaseApp = initializeApp(firebaseConfig);
 
-// Cache na pytania
+
 let catchedQuestions;
 
 // Zamienia obiekt pytań na tablicę z id w polu 'id'
