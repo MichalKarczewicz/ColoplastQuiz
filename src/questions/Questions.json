@@ -351,7 +351,7 @@
     "correctAnswer": 1,
     "explanation": "CorrectAnswer"
   },{
-    "question": "What to do if you receive a prescription with only dressing on it and the patient does not have a memberplan",
+    "question": "What to do if you receive a prescription with only dressing on it and the patient does not have a memberplan?",
     "category": "process",
     "description": "Tu też coś moze byc, jakis dodatkowy tekst",
     "image": "",
@@ -375,5 +375,154 @@
     ],
     "correctAnswer": 1,
     "explanation": "CorrectAnswer"
-  }  
+  },{
+    "question":"What products can a patient not receive without training in their use?",
+    "category": "product",
+    "description": "Tu też coś moze byc, jakis dodatkowy tekst",
+    "image": "",
+    "choices": [
+      {
+        "text": "Peristeen and Luja",
+        "id": 1
+      },
+      {
+        "text": "Complementary items",
+        "id": 2
+      },
+      {
+        "text": "380812",
+        "id": 3
+      },
+      {
+        "text": "Hand gel and gloves",
+        "id": 4
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },{
+    "question":"Are aproderm barrier cream and aproderm emollient cream the same products?",
+    "category": "product",
+    "description": "Tu też coś moze byc, jakis dodatkowy tekst",
+    "image": "",
+    "choices": [
+      {
+        "text": "No, Aproderm emollient cream is a med and barrier cream is a normal product.",
+        "id": 1
+      },
+      {
+        "text": "Yes, the products serve the same purpose only they differ in name",
+        "id": 2
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },{
+    "question":"If a prescription for only one product 380812 x 5 in proscript arrives, and there is no order on Ap lines, what should We do?",
+    "category": "product",
+    "description": "Tu też coś moze byc, jakis dodatkowy tekst",
+    "image": "",
+    "choices": [
+      {
+        "text": "If you receive a prescription for e.g. 380812 x 5 devices and this is the only product on this prescription (i.e. theoretically we cannot cover the prescription). And there is no order on the SF, we create an order from customer profile with no choosing 'prescription in hand', for the smallest correct quantity (i.e.= 5 pairs) and then create a 'Correction Needed' for this prescription and a request for the prescription",
+        "id": 1
+      },
+      {
+        "text": "Remove the prescription, mark the status to cancelled and the reason to not needed, then at the bottom in notes type `WQ`",
+        "id": 2
+      },
+      {
+        "text": "Make a new order for a quantity of x5 and send it out",
+        "id": 3
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },{
+    "question":"If a prescription comes in for either a nu-hope support product or a `P` belt and If there is an order with both products on asp lines order at should we do?",
+    "category": "product",
+    "description": "Tu też coś moze byc, jakis dodatkowy tekst",
+    "image": "",
+    "choices": [
+      {
+        "text": "In this case we follow the SF process for “missing from PX” and we treat those products as core, because these products cannot go out separately to the customer.",
+        "id": 1
+      },
+      {
+        "text": "Match the product with the prescription and split the order, then follow the process for supprting missing Shortfall ",
+        "id": 2
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },
+  {
+    "question":"If there is product CJLL onthe order and CJL in the proscript, can we send them?",
+    "category": "product",
+    "description": "Tu też coś moze byc, jakis dodatkowy tekst",
+    "image": "",
+    "choices": [
+      {
+        "text": "No, we cannot send CJLL on the order in SalesForce and CJL on the prescription in ProScript because they contain allergens to which the patient may be allergic.",
+        "id": 1
+      },
+      {
+        "text": "Yes, Those are products that can be sent even though different prices",
+        "id": 2
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },{
+    "question":"If we have one med product on the prescription and another that we can send what should we do?",
+    "category": "product",
+    "description": "Tu też coś moze byc, jakis dodatkowy tekst",
+    "image": "",
+    "choices": [
+      {
+        "text": "We need to add the med product to the prescription line items by clicking 'new' and search for it in Product and if it cannot be selected from the list enter its full name from the prescription into the Non-specified Product column and mark it as ND in the Endorsement Note",
+        "id": 1
+      },
+      {
+        "text": "Remove the prescription because we cannot send prescriptions where there is even one med product",
+        "id": 2
+      },
+      {
+        "text": "Send a query asking if GB can make the order for prescription, and after that we can send the order.",
+        "id": 3
+      }
+
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },{
+    "question":"Which bag is made by coloplast?",
+    "category": "product",
+    "description": "Tu też coś moze byc, jakis dodatkowy tekst",
+    "image": "",
+    "choices": [
+      {
+        "text": "",
+        "image": "/images/product_question_7_answer_1.jpg",
+        "id": 1
+      },
+      {
+        "text": "",
+        "image": "/images/product_question_7_answer_2.jpg",
+        "id": 2
+      },
+      {
+        "text": "",
+        "image": "/images/product_question_7_answer_3.jpg",
+        "id": 3
+      },
+      {
+        "text": "",
+        "image": "/images/product_question_7_answer_4.jpg",
+        "id": 4 
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  }
 ]

@@ -22,7 +22,7 @@ const Question = ({ data, currentQuestionIndex, selectAnswer, quizLength }) => {
       <div className="mb-4">
         <p className="mb-2 text-[#6f6f6f] text-xl">Question</p>
         <div className="flex items-center space-x-4">
-          <div className="flex items-center mt-4 justify-center w-12 h-12 rounded-full bg-white text-[#17b7cf] font-bold text-lg border border-[#6f6f6f]">
+          <div className="flex items-center mt-4 justify-center w-13 h-13 rounded-full bg-white text-[#17b7cf] font-bold text-lg border border-[#6f6f6f]">
             <strong>
               {currentQuestionIndex}/{quizLength}
             </strong>
@@ -81,7 +81,17 @@ const Question = ({ data, currentQuestionIndex, selectAnswer, quizLength }) => {
                   <span className="w-0.75 h-0.75 rounded-full bg-blue-500"></span>
                 )}
               </span>
-              <span className="pl-2">{choice.text}</span>
+              <span className="pl-2">                 
+                  {choice.image ? (
+                    <img
+                      src={choice.image}
+                      alt={`Option ${choice.id}`}
+                      className="max-w-[150px] max-h-[150px] object-contain"
+                    />
+                  ) : (
+                    choice.text
+                  )}
+              </span>
             </button>
           );
         })}

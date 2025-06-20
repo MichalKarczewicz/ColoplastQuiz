@@ -20,6 +20,8 @@ function AppWrapper() {
     .startsWith("/category");
   const isQuizPage = location.pathname.toLowerCase().startsWith("/quiz/");
 
+  //378 process
+
   return (
     <div className="min-h-screen pt-3 w-full">
       {(isQuizPage || isCategoryPage ) && <Header />}
