@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
 import CategorySelection from "./pages/CategorySelection";
+import ScrollOnTop from "./components/ScrollOnTop";
 
 function AppWrapper() {
   const location = useLocation();
@@ -39,6 +40,7 @@ function AppWrapper() {
 function App() {
   return (
     <Router>
+      <ScrollOnTop />
       <AppWrapper />
     </Router>
   );
