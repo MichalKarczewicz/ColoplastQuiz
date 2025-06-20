@@ -20,8 +20,7 @@ function AppWrapper() {
 
   return (
     <div className="min-h-screen pt-3 w-full">
-      {isQuizPage && <Header />}
-      {isCategoryPage && <Header />}
+      {(isQuizPage || isCategoryPage ) && <Header />}
 
       <div className="max-w-3xl mx-auto">
         <Routes>
