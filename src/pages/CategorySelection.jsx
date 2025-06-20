@@ -41,7 +41,7 @@ const CategorySelection = () => {
   const navigate = useNavigate();
 
   const handleSelect = (cat) => {
-    navigate(`/Quiz/${cat}`);
+    navigate(`/quiz/${cat}`);
   };
 
   return (

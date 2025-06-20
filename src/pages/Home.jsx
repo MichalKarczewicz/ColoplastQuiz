@@ -73,7 +73,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             whileTap={{ scale: 0.9 }}
-            onClick={() => navigate("/Category")}
+            onClick={() => navigate("/category")}
             className="text-white px-6 py-3 bg-[#17b7cf] transition hover:shadow-lg rounded-[24px] hover:underline text-2xl"
           >
             Start Quiz
