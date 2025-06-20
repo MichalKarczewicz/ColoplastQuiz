@@ -26,7 +26,7 @@ function AppWrapper() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/category" element={<CategorySelection />} />
-          <Route path="/category/*" element={<Navigate to="/category" replace />} />
+          <Route path="/quiz/*" element={<Navigate to="/category" replace />} />
           <Route path="/quiz/:quizCategory" element={<Quiz />} />
           <Route path="*" element={<Navigate to="/" replace />} />
 
