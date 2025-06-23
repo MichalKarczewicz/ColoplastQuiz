@@ -56,3 +56,5 @@ const getRandomQuestions = async (category) => {
     choices: shuffle(question.choices),
   }));
 };
+
+export { getRandomQuestions, getAllQuestions };
