@@ -40,15 +40,19 @@ const getAllQuestions = async () => {
   return questions;
 };
 
-const getRandomQuestions = async () => {
+const getRandomQuestions = async (category) => {
   const questions = await getAllQuestions();
-  const count = Math.min(10, questions.length);
-  const randomQuestions = sampleSize(questions, count);
+
+  // Filtrowanie po kategorii (jeśli podana)
+  const filtered = category
+    ? questions.filter(q => q.category === category)
+    : questions;
+
+  const count = Math.min(10, filtered.length);
+  const randomQuestions = sampleSize(filtered, count);
 
   return randomQuestions.map((question) => ({
     ...question,
     choices: shuffle(question.choices),
   }));
 };
-
-export { getRandomQuestions };

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { getRandomQuestions } from "../questions/QuestionService";
+import { getRandomQuestions, getAllQuestions } from "../questions/QuestionService";
 import Question from "./Question";
 import CategorySelection from "./CategorySelection";
 import { motion, AnimatePresence } from "framer-motion";
@@ -18,10 +18,15 @@ const Quiz = () => {
   const loadQuestions = useCallback(async () => {
     if (!quizCategory) return;
 
-    const allQuestions = await getRandomQuestions();
-    const filteredQuestions = allQuestions.filter(
-      (q) => q.category === quizCategory
-    );
+    // const allQuestions = await getRandomQuestions();
+    // const filteredQuestions = allQuestions.filter(
+    //   (q) => q.category === quizCategory
+    // );
+    const filteredQuestions = await getRandomQuestions(quizCategory);
+
+    
+    
+   
 
     // Losowe tasowanie
     for (let i = filteredQuestions.length - 1; i > 0; i--) {
