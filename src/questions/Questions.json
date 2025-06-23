@@ -375,6 +375,304 @@
     "correctAnswer": 1,
     "explanation": "CorrectAnswer"
   },{
+    "question": "Where can we find cutting templates and instructions for products on patient account?",
+    "category": "process",
+    "description": "Future",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "In Order Menagement",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "In details",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "In related",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "General Documents",
+        "image": null
+      }
+    ],
+    "correctAnswer": 2,
+    "explanation": "CorrectAnswer"
+  },
+  {
+    "question": "Where can we find cutting templates and instructions for products on patient account?",
+    "category": "process",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "In Order Menagement",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "In details",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "In Related",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "General Documents",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What does the letter E in exemption reason stand for?",
+    "category": "process",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "Valid Medical exemption certificate ",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "Income support (IS",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "Valid Maternity exemption certificate",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "Universal Credit and meets the criteria",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What should you do when an order has the status \"Shipment Confirmed\" and some products match the prescription?",
+    "category": "process",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "Match the prescription products with those on the order and create a new order only for unmatched items.",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "Create a new order for all products on the prescription, regardless of matching items.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "Always discard the original shipment if any products don't match.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "Immediately create a Shortfall case if products are missing from the order. ",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Which of the following statements is true regarding prescriptions from Prescription Services (PXS)?",
+    "category": "process",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "In case of differences, always create a Case (Query), and never make Shortfalls.",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "If there's a mismatch, adjust the order to match the prescription and make a Shortfall.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "All blue prescriptions come from PXS and should be returned as Duplicates if already ordered.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "Prescriptions from PXS can be edited directly in FO if quantities differ from the order.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What should you do if a Standing Order is waiting to be matched for product XX (60 units), but the prescription only contains 30 units?",
+    "category": "process",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "Raise a Shortfall case for WQ, as we do not change product quantities in Standing Orders.",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "Change the Standing Order to match the prescription quantity.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "Split the order and match part of it to the prescription.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "Mark the rest on PX as ‘Not Dispensed’.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "A Standing Order exists for products XX and YY, and the prescription includes XX, YY, and ZZ. What should you do?",
+    "category": "process",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "Match XX and YY to the Standing Order, and mark ZZ as ‘Not Dispensed’, unless there's an ‘On Demand’ order, in which case match ZZ to it.",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "Match all items to the Standing Order, including ZZ.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "Match XX and YY to the Standing Order and create a new order for ZZ regardless.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "Remove ZZ from the prescription so that it aligns with the Standing Order.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What should you do if you unintentionally match the wrong product in an order?",
+    "category": "process",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "Click the ‘Show All Orders’ button, locate the FO where the product was matched, select it, and click the red ‘Unmatch’ button on the right side of AP Lines. ",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "Contact the prescriber to cancel the prescription and start over.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "Click the ‘Unmatch All’ button under the PX tab to undo the match.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "Delete the product from the system and re-enter it correctly.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What should you do if prescription in ProScript has Treatment Type \"Repeat Dispensing (x of x)\"?",
+    "category": "process",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "We need to add number of repeat to the end of Prescription number in Salesforce. ",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "We treat it as a simple prescription.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "We return this prescription .",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "We have to check a special exemption in SalesForce.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },{
+    "question": "What to do if we get a prescription with the smallest possible cut on the bag?",
+    "category": "process",
+    "description": "Future",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "We do not set the cutting as it is already the smallest by default.",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "We set the cutting, we do not set it only at the largest hole.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "We write a query to GB.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "We return such a product.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },{
     "question":"What products can a patient not receive without training in their use?",
     "category": "product",
     "description": "Tu też coś moze byc, jakis dodatkowy tekst",
@@ -522,5 +820,414 @@
     ],
     "correctAnswer": 1,
     "explanation": "CorrectAnswer"
+  },{
+    "question": "How much is the monthly reimbursement for Ileostoma products?",
+    "category": "product",
+    "description": "Future",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "450 PLN (One-off after surgery 900 PLN)",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "530 PLN (One-off after surgery 900 PLN)",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "450 PLN (One-off after surgery 1060 PLN)",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": "CorrectAnswer"
+  },
+  {
+    "question": "Which Biatai product is suitable for heavily exuding wounds?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": null,
+        "image": "/images/product_question_10_answer_1.jpg"
+      },
+      {
+        "id": 2,
+        "text": null,
+        "image": "/images/product_question_10_answer_2.jpg"
+      },
+      {
+        "id": 3,
+        "text": null,
+        "image": "/images/product_question_10_answer_3.jpg"
+      },
+      {
+        "id": 4,
+        "text": null,
+        "image": "/images/product_question_10_answer_4.jpg"
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "If you want to send 250 ml of Uro Tainer NaCl, which product code do you need to select?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "FB99849",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "FB99833",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "9746625",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "3392G",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Can we send order with the product Zerolon barrier cream x 92 grams?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "Yes, but only when GB will create the new order.",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "Yes, we can create the order and send the product.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "No, this product is MED and we need to cancell it.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What code does Isagel (hand gel) have in sales force? ",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "LT080",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "3804311006",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "380NLTC034",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "380NCH0006",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What is the lowest quantity of product 380812 that we can send in the sales force?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "5",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "45",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "10",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "30",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What quantity in salesforce has the product 12080 x 315 written on the prescription in proscript?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "21",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "315",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "63",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "This is a wrong quantity.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "When handling a prescription for Prolapse Overbelt – P and Nu Hope Support Belt (6424), what is required to send the order?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "Both product codes must be present, as they form a set and cannot be sent separately.",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "You can send either product individually, no restrictions.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": " You only need the Nu Hope code; the Prolapse Overbelt is optional.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "Only the Prolapse Overbelt code is required to process the order.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "In what situation can the Nu Hope Support Belt be sent without the Prolapse Overbelt – P?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "When the Nu Hope Support Belt name includes \"No Hole.\"",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "When the prescription is marked as urgent. 2.  When only one product is available in stock. 3. When ",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "When only one product is available in stock.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "When the belt size is under 34 inches.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What is the correct process when handling a medication product that is not in our offer and cannot be sent to the customer?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "Cancel the prescription, select \"not needed\" as the reason, enter a note titled \"MED\" in PP view, then copy the script ID and paste it into EPS returns on Teams.",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "Return the item to the supplier and email the customer directly.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "Mark the product as “Out of Stock” and wait for restock confirmation. ",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "Forward the prescription to the pharmacy team for manual processing.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "How should you handle a prescription that includes one medication product we cannot send and another product that we can send?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "Add the medication product using the 'New' button, enter it in the Non-specified Product column if it's not in the list, and mark it as ND in the Endorsement Note and at the end of the prescription.",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "Delete the medication product and only process the item we can send",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "Attempt to create an order for both products anyway and wait for a GB to cancel it.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "Move the entire prescription to EPS returns without.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What should you do when a prescription is received for a different catheter than the one in a New Product order?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "Mark the incorrect product as ND, manually release the order, and create a shortfall case with \"new product\" in the subject. ",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "Cancel the order and wait for the correct prescription",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "Update the order to match the new prescription and remove the original product.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "Do nothing until the customer contacts support.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "What should you do if a patient has not ordered Peristeen or Luja products in over a year, and there's no information about training?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": "Create a Quick Case asking GB if the order should be created, set the prescription to 'draft' in Salesforce, and cancel it in ProScript by sending the Script ID to EPS Returns on Teams.",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "Proceed with the order if the prescription looks correct.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "Automatically reject the prescription and inform the customer to call back.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": "Match the prescription to a previous similar product and finalize it.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
+  },
+  {
+    "question": "Which statement about Luja catheters is correct?",
+    "category": "product",
+    "description": "",
+    "image": "",
+    "choices": [
+      {
+        "id": 1,
+        "text": " Luja Male catheters should only be matched to male orders, and Luja Female catheters only to female orders.",
+        "image": null
+      },
+      {
+        "id": 2,
+        "text": "Luja Male catheters can be sent to female patients if the prescription requests it.",
+        "image": null
+      },
+      {
+        "id": 3,
+        "text": "Luja catheters do not require any training before sending.",
+        "image": null
+      },
+      {
+        "id": 4,
+        "text": " Luja catheters can be sent without checking patient history if the order is urgent.",
+        "image": null
+      }
+    ],
+    "correctAnswer": 1,
+    "explanation": ""
   }
 ]

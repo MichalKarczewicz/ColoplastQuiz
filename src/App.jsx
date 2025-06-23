@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
 import CategorySelection from "./pages/CategorySelection";
 import ScrollOnTop from "./components/ScrollOnTop";
+import AddQuestions from "./pages/AddQuestions";
 
 function AppWrapper() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function AppWrapper() {
           <Route path="/category" element={<CategorySelection />} />
           <Route path="/quiz/*" element={<Navigate to="/category" replace />} />
           <Route path="/quiz/:quizCategory" element={<Quiz />} />
+          <Route path="/addQuestionsToDatabase" element={<AddQuestions />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
