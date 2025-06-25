@@ -12,6 +12,7 @@ import Quiz from "./pages/Quiz";
 import CategorySelection from "./pages/CategorySelection";
 import ScrollOnTop from "./components/ScrollOnTop";
 import AddQuestions from "./pages/AddQuestions";
+import Results from "./pages/Results";
 
 function AppWrapper() {
   const location = useLocation();
@@ -21,7 +22,10 @@ function AppWrapper() {
     .startsWith("/category");
   const isQuizPage = location.pathname.toLowerCase().startsWith("/quiz/");
 
-  //378 process
+  //1175 process 39 
+  // 1661 product 21
+  // 19 mentoring
+  // 2190 wikipedia 6 pytan
 
   return (
     <div className="min-h-screen pt-3 w-full">
@@ -31,6 +35,7 @@ function AppWrapper() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/category" element={<CategorySelection />} />
+          <Route path="/category/results" element={<Results />} />
           <Route path="/quiz/*" element={<Navigate to="/category" replace />} />
           <Route path="/quiz/:quizCategory" element={<Quiz />} />
           <Route path="/addQuestionsToDatabase" element={<AddQuestions />} />

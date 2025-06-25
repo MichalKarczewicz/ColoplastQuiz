@@ -138,13 +138,13 @@ const AddQuestions = () => {
             className="accent-blue-600"
           />
           <label htmlFor="isImageMode" className="text-sm text-gray-700">
-            Odpowiedzi są obrazkami (URL)
+            Answers are images (URLs)
           </label>
         </div>
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Odpowiedzi (zaznacz poprawną)
+            Answers (Choose correct)
           </label>
           {choices.map((choice, index) => (
             <div key={index} className="flex items-center mb-2 gap-2">
@@ -159,7 +159,7 @@ const AddQuestions = () => {
                 type="text"
                 value={choice}
                 onChange={(e) => handleChoiceChange(index, e.target.value)}
-                placeholder={isImageMode ? `URL obrazka ${index + 1}` : `Odpowiedź ${index + 1}`}
+                placeholder={isImageMode ? `URL obrazka ${index + 1}` : `Answer ${index + 1}`}
                 className="flex-1 rounded-md border px-3 py-2"
                 required
               />
@@ -180,7 +180,7 @@ const AddQuestions = () => {
               onClick={addChoice}
               className="mt-2 text-blue-600 hover:underline text-sm"
             >
-              + Dodaj odpowiedź
+              + Add answer
             </button>
           )}
         </div>

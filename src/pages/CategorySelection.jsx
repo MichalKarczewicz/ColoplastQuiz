@@ -1,18 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-const categories = ["product", "process", "mentoring", "wikipedia"];
+
+  
+const CategorySelection = () => {
+  const navigate = useNavigate();
+  const [hasSavedResults, setHasSavedResults] = useState(false);
+  const categories = ["product", "process", "mentoring", "wikipedia"];
+
+  useEffect(() => {
+    const hasAnyResults = categories.some((cat) => {
+      const storageKey = `Quiz_Result_of_${cat}`;
+      const saved = localStorage.getItem(storageKey);
+
+      if (!saved) return false;
+      try {
+        const parsed = JSON.parse(saved);
+        return Array.isArray(parsed) && parsed.length > 0;
+      } catch {
+        return false;
+      }
+    });
+
+    setHasSavedResults(hasAnyResults);
+  }, [categories]);
+
+  
 
 const getLastResult = (category) => {
   const saved = localStorage.getItem(`Quiz_Result_of_${category}`);
   if (!saved) return null;
   try {
-    return JSON.parse(saved);
+    const results = JSON.parse(saved);
+    if (Array.isArray(results) && results.length > 0) {
+      return results[results.length - 1]; // ostatni wynik
+    }
+    return null;
   } catch {
     return null;
   }
 };
+
+
 
 const containerVariants = {
   hidden: {},
@@ -37,8 +67,10 @@ let categoryButtonDoneBadResult =
 let categoryButton =
   "text-white px-6 py-3 bg-[#17b7cf] transition hover:shadow-lg rounded-[24px] hover:underline text-2xl";
 
-const CategorySelection = () => {
-  const navigate = useNavigate();
+let showAllResultsButton =
+  "text-white px-8 py-3 bg-[#0d99b6] hover:bg-[#148fb1] transition-shadow shadow-md hover:shadow-xl rounded-[24px] font-semibold text-xl tracking-wide select-none " +
+  "hover:underline cursor-pointer";
+  
 
   const handleSelect = (cat) => {
     navigate(`/quiz/${cat}`);
@@ -80,8 +112,24 @@ const CategorySelection = () => {
               )}
             </motion.button>
           );
-        })}
+        })}  
       </motion.div>
+      
+        {hasSavedResults && (
+          <motion.div   className="flex flex-col items-center justify-center p-10"
+           variants={containerVariants}
+            initial="hidden"
+            animate="show">
+           <motion.button
+              variants={itemVariants}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/category/results")}
+              className={showAllResultsButton}
+            >
+              Your Results
+            </motion.button>
+          </motion.div>
+        )}
     </div>
   );
 };

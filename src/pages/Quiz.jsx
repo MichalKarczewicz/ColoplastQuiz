@@ -74,10 +74,12 @@ const Quiz = () => {
         timestamp: Date.now(),
       };
 
-      localStorage.setItem(
-        `Quiz_Result_of_${quizCategory}`,
-        JSON.stringify(result)
-      );
+      const storageKey = `Quiz_Result_of_${quizCategory}`;
+
+      
+      let existingResults = JSON.parse(localStorage.getItem(storageKey)) || [];
+      existingResults.push(result);
+      localStorage.setItem(storageKey, JSON.stringify(existingResults));
     }
   };
 
