@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
-import {getFirestore} from "firebase/firestore"
-
-require('dotenv').config();
+import { getFirestore } from "firebase/firestore";
+import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -13,6 +12,7 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+
+export const db = getFirestore(app);      
+export const realtimeDb = getDatabase(app);        

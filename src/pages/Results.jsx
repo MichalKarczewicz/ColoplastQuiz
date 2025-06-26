@@ -53,14 +53,13 @@ const Results = () => {
             key={cat}
             className="p-6 rounded-xl shadow-md bg-white border border-gray-300 min-h-[245px] flex flex-col"
             >
-              {console.log("test")}
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800">
                   {capitalize(cat)}
                 </h2>
 
                 {paginated.length > 0 ? (
   <>
-    <div className="grid grid-cols-2 gap-1 text-lg text-gray-700 flex-1">
+    <div className="grid grid-cols-2  text-lg text-gray-700">
         {paginated.map((result, idx) => {
             const passed = result.score / result.total >= 0.5;
             const number = startIndex + idx + 1;
