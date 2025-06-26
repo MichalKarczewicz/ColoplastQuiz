@@ -53,7 +53,7 @@ const Results = () => {
             key={cat}
             className="p-6 rounded-xl shadow-md bg-white border border-gray-300 min-h-[245px] flex flex-col"
             >
-
+              {console.log("test")}
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800">
                   {capitalize(cat)}
                 </h2>
